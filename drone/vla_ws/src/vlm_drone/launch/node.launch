@@ -1,0 +1,4 @@
+<launch>
+    <node name="vlm_node" pkg="vlm_drone" type="drone.py" output="screen">
+    </node>
+</launch>
