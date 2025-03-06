@@ -14,7 +14,7 @@ The project integrates:
 - **FishEye T265** with Intel RealSense [realsense-ros](https://github.com/IntelRealSense/realsense-ros)
 - **Flight control** using **ArduPilot firmware (v4.4.4)** running on a **SpeedyBee F4 V4 flight controller**.
 - **ROS 1** for data handling, visualization, and control logic.
-
+- **Flask** for transferring data between the drone and a remote server.
 ---
 
 ## Tested Environment
@@ -24,6 +24,7 @@ The project integrates:
 - **Flight Controller:** SpeedyBee STM32F405 ARM
 - **Firmware:** ArduPilot v4.4.4
 - **Middleware:** ROS 1 (Noetic)
+- **Communication Framework:** Flask (Python-based server)
 
 ---
 
@@ -44,6 +45,10 @@ The project integrates:
 - Documentation: [https://ardupilot.org/dev/docs/ros.html](https://ardupilot.org/dev/docs/ros.html)
 - Repository: [https://github.com/ArduPilot/ardupilot_ros](https://github.com/ArduPilot/ardupilot_ros)
 
+### 4. Data Transfer Between Drone and Server
+- **Flask** is used to transfer telemetry, images, or processed data between the drone's companion computer and an external server.
+- Flask Documentation: [https://flask.palletsprojects.com/en/stable/](https://flask.palletsprojects.com/en/stable/)
+
 ---
 
 ## Hardware Setup
@@ -61,15 +66,3 @@ The project integrates:
 - IMU and camera used by OpenVINS for state estimation.
 
 ---
-
-## Installation & Setup
-
-### 1. Install ROS Noetic
-Follow standard ROS Noetic installation for Ubuntu 22.04.
-
-### 2. Clone and Build OpenVINS
-```bash
-cd ~/catkin_ws/src
-git clone https://github.com/rpng/open_vins.git
-cd ~/catkin_ws
-catkin_make
