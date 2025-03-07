@@ -1,10 +1,21 @@
 # RaceVLA
 
-The repository is currently under preparation for publication.
+The repository is currently under preparation for publication **RaceVLA**. 
+
 Arxiv link: [http://arxiv.org/abs/2503.02572]
 
-The source code will be uploaded soon!
+This repository contains the codebase for launching a racing drone and the necessary server-side scripts to host and run the RaceVLA model.
+Repository Structure
 
+    /drone/ — Scripts and configurations to initialize and launch the racing drone.
+    /server/ — Scripts to set up a server environment where the RaceVLA model is deployed and running.
+
+Features
+
+- Drone initialization and takeoff procedures
+- Communication setup between drone and RaceVLA server
+- RaceVLA model inference handling on the server side
+- Data exchange scripts to process and send image from onboard camera and receive control commands from the RaceVLA model
 
 ## System Overview
 
