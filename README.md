@@ -3,8 +3,8 @@
 The repository is currently under preparation for publication **RaceVLA**. 
 
 - Arxiv link: [http://arxiv.org/abs/2503.02572]
-- Pretrained models: [https://huggingface.co/SerValera2/RaceVLA_models]
-- Dataset (will be uploaded soon): [https://huggingface.co/datasets/SerValera2/RaceVLA_dataset]
+- Pretrained models: [https://huggingface.co/SerValera/RaceVLA_models]
+- Dataset (will be uploaded soon): [https://huggingface.co/datasets/SerValera/RaceVLA_dataset]
 
 This repository contains the codebase for launching a racing drone and the necessary server-side scripts to host and run the RaceVLA model.
 Repository Structure
